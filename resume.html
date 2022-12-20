@@ -1,0 +1,154 @@
+<html>
+<head>
+<head>
+<style>
+*{
+font-size:1.4rem;
+font-family:"Arial","Arial balck";
+}
+body{
+padding:3rem;
+margin:1rem;
+border:solid 1px #FFF;
+background:linear-gradient(blue,purple);
+color:white;
+}
+.box{
+
+border:1px solid #FFF;
+top:1rem;
+padding:0.5rem
+}
+.row{
+margin-top:5px;
+position:relative;
+display:flex;
+}
+.boxhl{
+//float:left;
+position:flex;
+width:50%;
+display:inline-block;
+border:1px solid #FFF;
+right:0.5rem;
+padding:0.5rem
+
+
+}
+.boxhr{
+//float:right;
+position:flex;
+width:50%;
+display:inline-block;
+border:1px solid #FFF;
+//top:20px;
+padding:0.5rem
+
+}
+
+.info{
+float:left;
+position:relative;
+top:0;
+display:inline;
+left:0;
+}
+.image-block:
+{
+
+display:inline;
+
+}
+.image-block .img{
+position:relative;
+width:8rem;
+height:10rem;
+top:0;
+left:70%;
+}
+form div{
+padding:0.8rem;
+}
+.submit{
+position:relative;
+color:green;
+padding:0.4rem;
+background:white;
+border:green 1px solid;
+border-radius:20px;
+right:10px;
+font-size:1rem;
+}
+.submit:hover{
+color:white;
+background:green;
+}
+.reset{
+position:relative;
+color:red;
+padding:0.4rem;
+background:white;
+border:red 1px solid;
+border-radius:20px;
+left:20px;
+font-size:1rem;
+}
+.reset:hover{
+color:white;
+background:red;
+}
+input[type='text'],input[type='email']{
+border:1px solid #fff   ;
+border-radius:5px;
+font-size:1rem;
+margin-left:25px;
+}
+label{
+font-size:1rem;
+}
+</style>
+<title>Resume</title>
+
+</head>
+
+<body>
+<div>
+    <div class="info">
+        <div>John Snow</div>
+        <div>johnsnow@gmail.com</div>
+        <div>989841009</div>
+    </div>
+    <div class="image-block">
+        <img class="img" src="resume_pic.jpg">
+    </div>
+ </div>
+<div class="row">
+    <div class="boxhl">
+        <h4>Description</h4>
+        <div>Enthusiatic and passionate learner. Keen to learn new technologies and explore. Graduated with Computer Science degree from XYZ University with distinction. And have a great grip with .Net Core and .Net MVC framework. Worked with ABC company for 6 years.</div>
+    </div>
+    <div class="boxhr">
+    <h4>Skills</h4>
+    <ul>
+        <li>Python with Django Framework</li>
+        <li>.Net Core MVC</li>
+        <li>Javascript</li>
+        <li>Angular</li>
+    </ul>
+    </div>
+</div>
+    <div class="box">
+        <h4 style="text:left;">Contact Form</h4>
+         <form method="POST">
+            <div><label>Name:<input type="text" name="client_name" placeholder="Name"></label></div>
+            <div><label>Email:<input type="email" name="client_email" placeholder="Email"></label></div>
+            <div><label>Contact:<input type="text" name="client_contact" placeholder="Contact"></label></div>
+            <div><label><input type="radio" name="gender" value="male">Male</label><label><input type="radio" name="gender" value="female">Female</label></div>
+            <div><label><input type="checkbox" name="tech" value="C++">C++</label><label><input type="checkbox" name="tech" value="python">Python</label><label><input type="checkbox" name="tech" value=".NET">.NET</label><label><input type="checkbox" name="tech" value="Other">Other</label></div>
+            <div><input class="submit" type="submit"><input class="reset" type="reset"/></div>
+          </form>
+    </div>
+
+</body>
+
+</html>
